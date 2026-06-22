@@ -1,26 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success Guide Dashboard</title>
+<meta charset="UTF-8">
+<title>Success Guide Dashboard</title>
 
-    <script>
-        // Reload page every 30 seconds
-        setInterval(function() {
-            window.location.reload();
-        }, 30000);
-    </script>
+<script>
+setInterval(function() {
+    document.getElementById("dashboard").src =
+    "success_guide_dashboard_v2.html?v=" + new Date().getTime();
+}, 30000);
+</script>
+
 </head>
+
 <body>
 
-    <iframe
-        src="success_guide_dashboard_v2.html"
-        width="100%"
-        height="1000"
-        frameborder="0">
-    </iframe>
+<iframe
+id="dashboard"
+src="success_guide_dashboard_v2.html"
+width="100%"
+height="1000"
+frameborder="0">
+</iframe>
 
 </body>
 </html>
